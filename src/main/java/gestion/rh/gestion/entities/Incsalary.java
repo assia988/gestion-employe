@@ -16,13 +16,12 @@ import java.io.Serializable;
 public class Incsalary implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+     Long id;
     private String nom;
     private String prenom;
     private Integer nbrcertif;
-    private Integer volapprentissage;
-    private Integer travailsup;
-    private Integer motivation;
-    private Integer innovation;
-
+    private Integer nbrmission;
+    private Integer nbrdhtravailjourferier;
+    private Integer nbdhtrweek;
+    private Integer prime;
 }

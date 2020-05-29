@@ -30,6 +30,7 @@ public class EmployeRestService {
         public void addEmploye(@RequestBody Employe e){
         employeRepository.save(e);
     }
+
     @RequestMapping(value = "/employes/{id}",method = RequestMethod.DELETE)
         public boolean deleteEmploye(@PathVariable Long id){
         employeRepository.deleteById(id);
